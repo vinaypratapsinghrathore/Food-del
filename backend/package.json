@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js", 
-    "dev": "nodemon server.js",  // Optional, if you want a development version
-    "server": "node server.js"   // Added script for running the server
+    "dev": "nodemon server.js", 
+    "server": "node server.js"   
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
