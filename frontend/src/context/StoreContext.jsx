@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { URL } from "../constant";
 import axios from "axios";
 
 
@@ -7,7 +8,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-   const url="https://food-del-backend-h6au.onrender.com"
+   const url= URL
    const [token,setToken]=  useState("");
    const [food_list,setFoodList] = useState([])
   const addToCart = async (itemId) => {
